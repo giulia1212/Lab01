@@ -91,7 +91,7 @@ def per_punteggio(item):
 # Ordino in ordine decrescente
 lista_ordinata = sorted(punteggi.items(), key=per_punteggio,  reverse=True)
 
-# Riscrivo il file
+# Riscrivo il  file
 with open("punti.txt", "w") as file:
     for nome, punti in lista_ordinata:
         file.write(f"{nome} {punti}\n")
